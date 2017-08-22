@@ -6,4 +6,4 @@ public class Arrays {
 			System.out.println(names[i].toUpperCase());
 		}
 	}
-}
+} 
