@@ -6,4 +6,4 @@ public class Div {
         double div  = a / b;
         System.out.println(a + " / " + b + " = " + div);
     }
-}
+} 
