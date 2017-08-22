@@ -5,4 +5,4 @@ public class DoubleOperations{
 		a = Math.toRadians(a);
 		System.out.println("Math.sin(" + a + ") = " + Math.sin(a));
 	}
-}
+} 
