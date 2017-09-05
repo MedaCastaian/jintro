@@ -36,7 +36,7 @@ public class HelloArrays {
 	}
     
 	public static void main(String[] args) { //variabila
-        arrayTests2(args);
-        arrayTests3();
+	arrayTests2(args);
+	arrayTests3();
 	}
 } 
