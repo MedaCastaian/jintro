@@ -10,7 +10,7 @@ public class HelloArrays {
             System.out.print(args[i] + ", ");
         }
         System.out.println(args[args.length -1]);
-    }
+	}
     
 	private static void arrayTests2(String[] args) {
         if (args == null || args.length == 0) {
@@ -24,7 +24,7 @@ public class HelloArrays {
         }
         greet = greet + args[n];
         System.out.println(greet);
-    }
+	}
     
 	private static void arrayTests3() {
         String[] names = {"Ana", "Ion", "Oana", "Alex"};
@@ -33,10 +33,10 @@ public class HelloArrays {
         }
         for (String name: names)
             System.out.println(name);
-    }
+	}
     
 	public static void main(String[] args) { //variabila
         arrayTests2(args);
         arrayTests3();
-    }
+	}
 } 
