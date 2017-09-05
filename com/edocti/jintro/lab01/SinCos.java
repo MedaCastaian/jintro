@@ -10,4 +10,3 @@ public class SinCos {
         System.out.println(Math.pow(x, 10));
     }      
 } 
-	
