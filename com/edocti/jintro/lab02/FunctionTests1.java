@@ -2,13 +2,14 @@ package com.edocti.jintro.lab02;
 public class FunctionTests1 {
 	
     private static int asInt(String input) {
-        try {
-           int a = Integer.parseInt(args[input]);
+        int a = -1;
+	try {
+           a = Integer.parseInt(input);
         } catch(NumberFormatException e) {
             System.err.println("Not a number: " + input);
             System.exit(-1);
         }
-        return int a; 
+        return a; 
     }
     
 	private static void validateArgs(String[] args) {
