@@ -4,8 +4,8 @@ public class Palindrome {
 
     //Method to check
     private static boolean isPalindrome(String s) {
-		// if length is 0 or 1 then String is palindrome
-		int N = s.length();
+	// if length is 0 or 1 then String is palindrome
+	int N = s.length();
         if (N == 0 || N == 1) {
             return true;
         }			
@@ -17,7 +17,7 @@ public class Palindrome {
          * Function calling itself: Recursion
          */
         return isPalindrome(s.substring(1, N-1));
-		}
+	}
         /* If program control reaches to this statement it means
          * the String is not palindrome hence return false.
          */
