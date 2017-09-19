@@ -7,9 +7,9 @@ public class ShuffleArray {
         // between i and N-1
         for (int i = 0; i < N; i++) {
             int r = (int) (N * Math.random());
-        int tmp = a[i];    // swap
-        a[i] = a[r];
-        a[r] = tmp;
+            int tmp = a[i];    // swap
+            a[i] = a[r];
+            a[r] = tmp;
         }
     }
 
