@@ -14,7 +14,7 @@ public class ShuffleArray {
     }
 
     public static void main(String[] args) {
-        int[] a = new int[] {1, 4, 20, 10, 6, 7, 9};
+        int[] a = {1, 4, 20, 10, 6, 7, 9};
         shuffleArray(a);
         for (int i: a) {
             System.out.print(i + " ");
