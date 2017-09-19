@@ -6,7 +6,7 @@ public class IntegerOperations {
         if (args.length < 3) {
             err.println("Usage: IntegerOperations int1 int2 operators");
             throw new IllegalArgumentException("Usage: IntegerOperations int1 int2 operators");
-			//exit(-1);
+	    //exit(-1);
         }
     }
 	
@@ -58,7 +58,7 @@ public class IntegerOperations {
         } else if (operation.equals("mod")) {
             result = modulo(a, b);
         }
-            err.println("Unknown operation");	
+        err.println("Unknown operation");	
         out.printf("%d %s %d = %d\n", a, operation, b, result);
     }
 } 
