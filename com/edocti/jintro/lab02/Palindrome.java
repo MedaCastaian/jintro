@@ -28,7 +28,7 @@ public class Palindrome {
         Scanner scanner = new Scanner(System.in); //System.in represents Standard Input Device (Keyboard)
         System.out.println("Enter the String for check:");
         String string = scanner.nextLine(); //nextLine() reads input including space between the words (that is, it reads till the end of line \n). Once the input is read, nextLine() positions the cursor in the next line.
-        if(isPalindrome(string))
+        if (isPalindrome(string))
             System.out.println(string + " is a palindrome");
         else
             System.out.println(string + " is not a palindrome");
