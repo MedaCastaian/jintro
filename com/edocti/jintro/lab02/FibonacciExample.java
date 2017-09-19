@@ -2,7 +2,7 @@ package com.edocti.jintro.lab02;
 public class FibonacciExample {
     
     public static int fibonacci(int n) {
-        if ( n == 0 || n == 1 ) {
+        if (n == 0 || n == 1) {
         return n;
         }
         else {
