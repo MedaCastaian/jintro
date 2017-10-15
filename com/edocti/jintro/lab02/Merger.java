@@ -2,11 +2,12 @@ package com.edocti.jintro.lab02;
 public class Merger {
 	
     private static boolean isSorted(int[] a) {
-        for (int i = 1; i <a.length; 1++) {
+        for (int i = 1; i <a.length; i++) {
             if (a[i] < a[i-1]) { // preconditii
                 return false; // preconditii
             }
         }
+	return true;
     }
 	
     private static void main(String[] args) {
