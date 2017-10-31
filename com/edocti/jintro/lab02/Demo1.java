@@ -9,7 +9,7 @@ public class Demo1 {
     	grade = gradeCalc(rawTest);
     	System.out.println("Your grade is: " + grade);
     }
-    private static float gradeCalc(float test[]){
+    private static float calculateGrade(float test[]) {
     	return (test[0]/test[1]) * 100;
     }  
 }
