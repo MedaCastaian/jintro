@@ -14,7 +14,7 @@ public class Demo7 {
         myArray [2] = "Ana ";
         myArray [3] = "Carmen ";
         Arrays.sort(myArray);
-        index = Arrays.binarySearch(myArray, "Ana");
+        index = Arrays.binarySearch(myArray, "Ana ");
             System.out.println("Ana is in array element: " + index);
     }
 }
