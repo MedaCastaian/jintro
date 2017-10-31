@@ -11,8 +11,8 @@ public class Demo6 {
         myArray [2] = "Ana ";
         myArray [3] = "Carmen ";
         Arrays.sort(myArray);
-        for (int i = 0; i < 4; i++) {
-            System.out.print(myArray[i]);
+        for (String name: myArray) {
+            System.out.print(name);
         }
     }
 }
