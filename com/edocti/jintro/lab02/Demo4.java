@@ -6,7 +6,7 @@ import java.util.*;
 public class Demo4 {
     public static void main(String[] args) {
         int studentIDs[] = new int [50];
-        Arrays.fill(studentIDs, 0);
+        Arrays.fill(studentIDs, 1);
         for(int i = 0; i < studentIDs.length; i++) {
             System.out.print(studentIDs [i]);
         }	
