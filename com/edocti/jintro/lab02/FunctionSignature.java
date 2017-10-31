@@ -34,7 +34,7 @@ public class FunctionSignature {
     //3. O functie care returneaza cel mai scurt element dintr-un array de String-uri
     public static String findShortest(String[] a) {
     	if (a == null || a.length == 0) {
-    		return " ";
+    		return "";
     	}
     	String shortest = a[0];
     	for (int i = 1; i < a.length; i++) {
