@@ -8,11 +8,11 @@ public class Demo5 {
         float[] studentIDs = new float [30];
         Arrays.fill(studentIDs, 1);
         for (int i = 0; i < studentIDs.length; i++) {
-            System.out.print(studentIDs [i]);
+            System.out.print(studentIDs[i]);
         }
         Arrays.fill(studentIDs, 10, 20, 0);
         for(int i = 0; i < studentIDs.length; i++) {
-            System.out.print(studentIDs [i]);
+            System.out.print(studentIDs[i]);
         }
     }
 }
