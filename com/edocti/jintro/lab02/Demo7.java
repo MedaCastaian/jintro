@@ -5,14 +5,15 @@
 package com.edocti.jintro.lab02;
 
 import java.util.*;
-public class Demo7 {
+
+public class Demo7 {  
     public static void main(String[] args) {
         int index;
         String myArray[] = new String[4];
-        myArray [0] = "Oana ";
-        myArray [1] = "Mihai ";
-        myArray [2] = "Ana ";
-        myArray [3] = "Carmen ";
+        myArray[0] = "Oana ";
+        myArray[1] = "Mihai ";
+        myArray[2] = "Ana ";
+        myArray[3] = "Carmen ";
         Arrays.sort(myArray);
         index = Arrays.binarySearch(myArray, "Ana ");
             System.out.println("Ana is in array element: " + index);
