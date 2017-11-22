@@ -19,15 +19,19 @@ public class Identity {
 	private String IDno;
 	private String Gender;
 	private Date birthdate;
+	
+	public String getIDNo() {
+            return IDno;
+        }
 
 	public static void main(String[] args) {
 		String identity = "Ion, Popescu, 1800920117892";
 		Identity a = extractIdentity(identity);
-		String Gender = extractGender(identity);
-		Date birthdate = extractbirthdate(identity);
+		String Gender = extractGender(a.getIDNo());
+		Date bD = extractbirthdate(a.getIDNo());
 		System.out.println(a);
 		System.out.println(Gender);
-		System.out.println(birthdate);
+		System.out.println(bD.toString());
 	}
 
 	private static Identity extractIdentity(String identity) {
@@ -39,9 +43,9 @@ public class Identity {
 	}
 
 	private static String extractGender(String IDno) {
-		int g = Integer.parseInt(IDno.substring(0));
+		String g = IDno.substring(0);
 		String Male = "1", Female = "2";
-		if (g == 1) {
+		if (g == "1") {
 			return Male;
 		} else {
 			return Female;
@@ -49,13 +53,14 @@ public class Identity {
 	}
 
 	private static Date extractbirthdate(String IDno) {
-		int b = Integer.parseInt(IDno.substring(1, 6));
+		String b = IDno.substring(1, 6);
+		Date bD = new Date();
 		try {
-			Date birthdate = new SimpleDateFormat("yymmdd").parse("birthdate");
+			bD = new SimpleDateFormat("yymmdd").parse(b);
 		} catch (ParseException e) {
 			System.err.println("The given String is not a date");
 		}
-		return birthdate;
+		return bD;
 	}
 
 	@Override
